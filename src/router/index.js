@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 
 const router = createRouter({
+  // hash模式：createWebHashHistory，history模式：createWebHistory
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -16,19 +17,14 @@ const router = createRouter({
       component: () => import('@/views/AboutView.vue')
     },
     {
-      path: '/a',
-      component: () => import('@/views/a.vue'),
-      alias: '/c'
-    },
-    {
-      path: '/c',
-      name: 'c',
-      component: () => import('@/views/c.vue'),
-    },
-    {
       path: '/user/:userId',
       name: 'user',
       component: () => import('@/views/user.vue')
+    },
+    {
+      path: '/backend',
+      name: 'backend',
+      component: () => import('@/views/backend.vue')
     }
   ]
 })

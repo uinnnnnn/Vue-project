@@ -1,3 +1,3 @@
 <template>
-    <div>cccccc</div>
+    <div>刪除</div>
 </template>
