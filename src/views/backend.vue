@@ -60,7 +60,6 @@ const formData = reactive({
     }
 })
 
-
 const submitForm = async () => {
     const postData = {
         username: formData.username,
@@ -82,7 +81,7 @@ const submitForm = async () => {
 
     axios(options)
         .then((res) => {
-            console.log(res);
+            console.log(res)
             alert(
                 res.data.message +
                 '\n id=' +

@@ -1,3 +1,9 @@
 <template>
-    <div>刪除</div>
+  <button>刪除</button>
 </template>
+
+<script>
+export default {
+  name: 'Modal'
+}
+</script>
