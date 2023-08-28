@@ -1,6 +1,8 @@
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.
+使用 Vue3 練習連接 API
+創建會員、查看會員
 
 ## Recommended IDE Setup
 
